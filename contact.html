@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-commerce</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+        <script defer src="./script.js"></script>
+    </head>
+    <body>
+        <!--header section starts-->
+         <section id="header">
+             <a href="#"><img src="./images/logo.png" class="logo" alt="" height="50" width="100"></a>
+             <div>
+                 <ul id="navbar">
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="product.html">Product</a></li>
+                     <li><a href="category.html">Category</a></li>
+                     <li><a href="about.html">About Us</a></li>
+                     <li><a class="active" href="contact.html">Contact</a></li>
+                    <li><a href="search.html">Search</a></li>
+                     <li><a href="cart.html"><i class="fas fa-shopping-cart fa-2x"></i><span 
+                           class="badge badge-pill badge-primary">24</span></a></li>     
+                 </ul>          
+             </div>
+         </section>
+         <!--header section ends-->
+    <!-- <div class="topic-text">Form</div>-->
+        <!--contact page starts here-->
+    <h2 class="heading">Contact Us</h2> 
+      <div class="cont">
+      <div class="content">
+        <div class="left-side">
+            <div class="address details">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="topic">Address</div>
+                <div class="text-one">surkhet,NP12</div>
+                <div class="text-two">Birendranagar</div>
+            </div>
+            <div class="phone details">
+                <i class="fas fa-phone-alt"></i>
+                <div class="topic">Phone</div>
+                <div class="text-one">+0098 9898 5647</div>
+                <div class="text-two">+0097 3434 8437</div>
+            </div>
+            <div class="email details">
+                <i class="fas fa-envelope"></i>
+                <div class="topic">Email</div>
+                <div class="text-one">example@gmail.com</div>
+                <div class="text-two">info.example@gmail.com</div>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="topic-text">Form</div>
+            <form id="form">
+                <div class="input-control"> 
+                    <input id="username" name="username" type="text" placeholder="Enter Your Name" >
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <input id="email" name="email" type="text" placeholder="Enter Your Email">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <textarea class="message-box" id="msg" type="text" placeholder="Message"></textarea>
+                    <div class="error"></div>
+                </div>
+                <div>
+                <button type="submit" class="bttn">Submit</button></div>
+            </form>
+        </div>
+    </div>
+           </div>
+            <script>
+                const form = document.getElementById('form');
+                const username = document.getElementById('username');
+                const email = document.getElementById('email');
+                const msg = document.getElementById('msg');
+                
+                
+                form.addEventListener('submit', e => {
+                    e.preventDefault();
+                
+                    validateInputs();
+                });
+                
+                const setError = (element, message) => {
+                    const inputControl = element.parentElement;
+                    const errorDisplay = inputControl.querySelector('.error');
+                
+                    errorDisplay.innerText = message;
+                    inputControl.classList.add('error');
+                    inputControl.classList.remove('success')
+                }
+                
+                const setSuccess = element => {
+                    const inputControl = element.parentElement;
+                    const errorDisplay = inputControl.querySelector('.error');
+                
+                    errorDisplay.innerText = '';
+                    inputControl.classList.add('success');
+                    inputControl.classList.remove('error');
+                };
+                
+                const isValidEmail = email => {
+                    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                    return re.test(String(email).toLowerCase());
+                }
+                
+                const validateInputs = () => {
+                    const usernameValue = username.value.trim();
+                    const emailValue = email.value.trim();
+                    const msgValue = msg.value.trim();
+                    
+                
+                    if(usernameValue === '') {
+                        setError(username, 'Username is required');
+                    } else {
+                        setSuccess(username);
+                    }
+                
+                    if(emailValue === '') {
+                        setError(email, 'Email is required');
+                    } else if (!isValidEmail(emailValue)) {
+                        setError(email, 'Provide a valid email address');
+                    } else {
+                        setSuccess(email);
+                    }
+                
+                    if(msgValue === '') {
+                        setError(msg, 'msg is required');
+                    }else if (!isValidmsg(msgValue)) {
+                        setError(msg, 'Provide a valid msg');
+                    } else {
+                        setSuccess(msg);
+                    }
+                
+                };
+                </script>
+        
+       <!--contact page ends here-->
+       <!--footer section starts here-->
+         <footer class="section-p1">
+            <div class="col">
+              <a href="index.html"><img src="images/logo.png" alt="" height="50" width="100"></a>
+              <p>Lorem ipsum dolor, sit amet</p>
+              <p>consectetur adipisicing elit. </p>
+              <p>Impedit, totam estillum ipsum quas ad</p>
+              <p>dignissimos magni veritatis natus voluptatem.
+                  </p>
+            </div>
+            <div class="col">
+              <h3>Quick Links</h3>
+              <a href="about.html">About</a>
+               <a href="javascript:;">Offers & Discounts</a>
+               <a href="javascript:;">Get Coupon</a>
+               <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="col">
+              <h3>New Products</h3>
+              <a href="javascript:;">Woman Cloth</a>
+              <a href="javascript:;">Fashion Accessories</a>
+              <a href="javascript:;">Man Accessories</a>
+              <a href="javascript:;">Rubber made Toys</a>
+          </div>
+          <div class="col">
+              <h3>Support</h3>
+              <a href="javascript:;">Frequently Asked Questions</a>
+              <a href="javascript:;">Terms & Conditions</a>
+              <a href="javascript:;">Privacy Policy</a>
+              <a href="javascript:;">Report a Payment Issue</a>
+          </div>
+         <div class="copyright">
+             <p>Copyright ©2022 All rights reserved</p>
+         </div>
+         <div class="backtop">
+          <a id="button" href="#top" class="btn btn-lg btn-outline-danger" role="button">
+          <i class="fas fa-chevron-up text-dark"></i>
+          </a>
+          </div>
+        </footer>
+         <!--footer section ends here-->
+        </body>
+    </html>

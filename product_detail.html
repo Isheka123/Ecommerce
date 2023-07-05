@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-commerce</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+    </head>
+    <body>
+        <!--header section starts-->
+         <section id="header">
+             <a href="#"><img src="./images/logo.png" class="logo" alt="" height="50" width="100"></a>
+             <div>
+                 <ul id="navbar">
+                     <li><a href="index.html">Home</a></li>
+                     <li><a class="active" href="product.html">Product</a></li>
+                     <li><a href="category.html">Category</a></li>
+                     <li><a href="about.html">About Us</a></li>
+                     <li><a href="contact.html">Contact</a></li>
+                    <li><a href="search.html">Search</a></li>
+                     <li><a href="cart.html"><i class="fas fa-shopping-cart fa-2x"></i><span 
+                           class="badge badge-pill badge-primary">24</span></a></li>     
+                 </ul>          
+             </div>
+         </section>
+         <!--header section ends--> 
+            <!--products section starts here-->
+       
+       <div class="small-container single-product">
+        <h2 class="heading">Product details</h2>
+        <div class="row">
+            <div class="col-2">
+                <img src="images/product1.png" width="100%" id="ProductImg">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="images/product1.png" width="100%" class="small-img">  
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/product2.png" width="100%" class="small-img">  
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/product3.png" width="100%" class="small-img">  
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/product1.png" width="100%" class="small-img">  
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+              <h2>Blue denim shirt</h2>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star low-star"></i>
+                <i class="far fa-star low-star"></i>
+              </div>
+              <h4>₹400</h4>
+              <select>
+                <option>Select Size</option>
+                 <option>XL</option>
+                 <option>XXL</option>
+                 <option>L</option>
+                 <option>S</option>
+              </select>
+              <input type="number" value="1">
+              <a href="cart.html" class="btn">Add to cart</a>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                nemo aliquid ipsum dolore amet, nesciunt asperiores sequi mollitia iste recusandae.
+               Dolor eveniet unde possimus quod magnam, nobis quisquam totam, quaerat
+                temporibus iusto tenetur ipsam aperiam. Quasi dolores recusandae aperiam. Aliquam consectetur
+               suscipit eligendi temporibus quae, ducimus accusantium adipisci. Ea maiores eum
+                saepe. Obcaecati explicabo sapiente nihil officia eligendi nesciunt, nisi repellendus
+                autem. Fuga aspernatur quam consequatur dignissimos, error corrupti.
+                Doloremque reiciendis quasi, aut eius beatae id sint quis minus culpa.</p>
+            </div>
+        </div>
+       </div>
+       <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var smallImg = document.getElementsByClassName("small-img");
+
+        smallImg[0].onclick = function(){
+            ProductImg.src = smallImg[0].src;
+        }
+        smallImg[1].onclick=function(){
+            ProductImg.src=smallImg[1].src;
+        }
+        smallImg[2].onclick=function(){
+            ProductImg.src=smallImg[2].src;
+        }
+        smallImg[3].onclick=function(){
+            ProductImg.src=smallImg[3].src;
+        }
+     </script>
+     <section id="product1" class="section-p1">
+        <h2 class="heading">Related Products</h2>
+        <div class="pro-container">
+          <div class="pro">
+            <a href="product_detail.html"><img src="images/product1.png" alt=""></a>
+            <div class="des">
+              <h4><a href="product_detail.html">Green Dress with details</a></h4>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star low-star"></i>
+                <i class="far fa-star low-star"></i>
+              </div>
+              <h4>₹400</h4>
+              </div>
+              
+            </div>
+          
+      
+          <div class="pro">
+            <a href="product_detail.html"><img src="images/product2.png" alt=""></a>
+            <div class="des">
+              <h4><a href="product_detail.html">Green Dress with details</a></h4>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star low-star"></i>
+                <i class="far fa-star low-star"></i>
+              </div>
+              <h4>₹400</h4>
+              </div>
+             
+            </div>
+          
+      
+          <div class="pro">
+            <a href="product_detail.html"><img src="images/product3.png" alt=""></a>
+            <div class="des">
+              <h4><a href="product_detail.html">Green Dress with details</a></h4>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star low-star"></i>
+                <i class="far fa-star low-star"></i>
+              </div>
+              <h4>₹400</h4>
+              </div>
+          </div>
+
+          <div class="pro">
+            <a href="product_detail.html"><img src="images/product1.png" alt=""></a>
+            <div class="des">
+              <h4><a href="product_detail.html">Green Dress with details</a></h4>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star low-star"></i>
+                <i class="far fa-star low-star"></i>
+              </div>
+              <h4>₹400</h4>
+              </div>
+          </div>
+</div>
+</section>
+  <!--products section ends here-->
+<!--footer section starts here-->
+         <footer class="section-p1">
+            <div class="col">
+              <a href="index.html"><img src="images/logo.png" alt="" height="50" width="100"></a>
+              <p>Lorem ipsum dolor, sit amet</p>
+              <p>consectetur adipisicing elit. </p>
+              <p>Impedit, totam estillum ipsum quas ad</p>
+              <p>dignissimos magni veritatis natus voluptatem.
+                  </p>
+            </div>
+            <div class="col">
+              <h3>Quick Links</h3>
+              <a href="about.html">About</a>
+               <a href="javascript:;">Offers & Discounts</a>
+               <a href="javascript:;">Get Coupon</a>
+               <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="col">
+              <h3>New Products</h3>
+              <a href="javascript:;">Woman Cloth</a>
+              <a href="javascript:;">Fashion Accessories</a>
+              <a href="javascript:;">Man Accessories</a>
+              <a href="javascript:;">Rubber made Toys</a>
+          </div>
+          <div class="col">
+              <h3>Support</h3>
+              <a href="javascript:;">Frequently Asked Questions</a>
+              <a href="javascript:;">Terms & Conditions</a>
+              <a href="javascript:;">Privacy Policy</a>
+              <a href="javascript:;">Report a Payment Issue</a>
+          </div>
+         <div class="copyright">
+             <p>Copyright ©2022 All rights reserved</p>
+         </div>
+         <div class="backtop">
+          <a id="button" href="#top" class="btn btn-lg btn-outline-danger" role="button">
+          <i class="fas fa-chevron-up text-dark"></i>
+          </a>
+          </div>
+        </footer>
+         <!--footer section ends here-->
+      
+         <script src="script.js"></script>
+         </body>
+         </html>

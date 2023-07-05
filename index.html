@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-commerce</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    </head>
+    <body>
+        <!--header section starts-->
+         <section id="header">
+             <a href="#"><img src="./images/logo.png" class="logo" alt="" height="50" width="100"></a>
+             <div>
+                 <ul id="navbar">
+                     <li><a class="active" href="index.html">Home</a></li>
+                     <li><a href="product.html">Product</a></li>
+                     <li><a href="category.html">Category</a></li>
+                     <li><a href="about.html">About Us</a></li>
+                     <li><a href="contact.html">Contact</a></li>
+                    <li><a href="search.html">Search</a></li>
+                     <li><a href="cart.html"><i class="fas fa-shopping-cart fa-2x"></i><span 
+                           class="badge badge-pill badge-primary">24</span></a></li>     
+                 </ul>          
+             </div>
+         </section>
+         <!--header section ends--> 
+         <!--slider section starts--> 
+         <div class="container">
+          <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                     <!-- Slides -->
+                         <div class="swiper-slide"><img src="images/photo-1506645292803-579c17d4ba6a.jfif" alt=""></div>
+                         <div class="swiper-slide"><img src="images/photo-1553830591-d8632a99e6ff.jfif"></div>
+                        <div class="swiper-slide"><img src="images/photo-1554774853-7f03caeb4b15.jfif"></div>
+
+                   </div>
+               <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+  
+                <!-- If we need navigation buttons
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>  -->   
+  </div>
+         </div>
+         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+         <script>
+             const swiper = new Swiper('.swiper', {
+            autoplay:{
+                delay:3000,
+                disableOnInteraction:false,
+            },
+              loop: true,
+              pagination: {
+                 el: '.swiper-pagination',
+                 clickable:true,
+                },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+  },
+});
+         </script>
+         
+         <!--slider section ends--> 
+         <!--shop by category starts-->
+         
+         <section  id="category" class="section-p1">
+            <h2 class="heading">Shop by Category</h2>
+            <div class="box-container">
+             <div class="box">
+                <a href="category.html"><img src="images/category1.jfif" alt=""></a>
+             </div>
+             <div class="box">
+                <a href="category.html"><img src="images/category2.jfif" alt=""></a>
+             </div>
+             <div class="box">
+                <a href="category.html"><img src="images/category3.jfif" alt=""></a>
+             </div> 
+             </div>
+         </section>
+         <!--shop by category endss-->
+         <!--Latest products starts here-->
+         <section id="product1" class="section-p1">
+            <h2 class="heading">Latest Products</h2>
+            <div class="pro-container">
+              <div class="pro">
+                <a href="product_detail.html"><img src="images/product1.png" alt=""></a>
+                <div class="des">
+                  <h4><a href="product_detail.html">Green Dress with details</a></h4>
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <h4>₹400</h4>
+                  </div>
+                </div>
+              
+          
+              <div class="pro">
+                <a href="product_detail.html"><img src="images/product2.png" alt=""></a>
+                <div class="des">
+                  <h4><a href="product_detail.html">Green Dress with details</a></h4>
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <h4>₹400</h4>
+                  </div>
+                  
+                </div>
+              
+          
+              <div class="pro">
+                <a href="product_detail.html"><img src="images/product3.png" alt=""></a>
+                <div class="des">
+                  <h4><a href="product_detail.html">Green Dress with details</a></h4>
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <h4>₹400</h4>
+                  </div>
+                
+              </div>
+
+              <div class="pro">
+                <a href="product_detail.html"><img src="images/product1.png" alt=""></a>
+                <div class="des">
+                  <h4><a href="product_detail.html">Green Dress with details</a></h4>
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <h4>₹400</h4>
+                  </div>
+               
+              </div>
+
+              <div class="pro">
+                <a href="product_detail.html"><img src="images/product2.png" alt=""></a>
+                <div class="des">
+                  <h4><a href="product_detail.html">Green Dress with details</a></h4>
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <h4>₹400</h4>
+                  </div>
+                  
+                </div>
+              
+          
+              <div class="pro">
+                <a href="product_detail.html"><img src="images/product3.png" alt=""></a>
+                <div class="des">
+                  <h4><a href="product_detail.html">Green Dress with details</a></h4>
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <h4>₹400</h4>
+                  </div>
+                 
+                </div>
+                <div class="pro">
+                    <a href="product_detail.html"><img src="images/product2.png" alt=""></a>
+                    <div class="des">
+                      <h4><a href="product_detail.html">Green Dress with details</a></h4>
+                      <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star "></i>
+                        <i class="far fa-star low-star"></i>
+                      </div>
+                      <h4>₹400</h4>
+                      </div>
+        
+                    </div>
+
+              <div class="pro">
+                <a href="product_detail.html"><img src="images/product2.png" alt=""></a>
+                <div class="des">
+                  <h4><a href="product_detail.html">Green Dress with details</a></h4>
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star low-star"></i>
+                  </div>
+                  <h4>₹400</h4>
+                  </div>
+                 
+              </div>
+            </div>            
+        </section>
+         <!--Latest products ends here-->
+
+         <!--feature code starts here-->
+         <section id="feature1" class="section-p1">
+            <h2 class="heading">Our Feature</h2>
+            <div class="line">
+               <div class="fea">
+                <i class="fas fa-shipping-fast fa-3x mb-3 pt-2"></i>
+                <h3>Free Shipping Method</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos impedit id
+                    accusamus quas maxime
+                    expedita nostrum atque delectus deleniti ad modi repellat debitis ipsam
+                    quisquam amet, odit voluptate
+                    recusandae distinctio? Perferendis tenetur quibusdam porro dolor dignissimos
+                    id magnam debitis vitae?</p>
+                    </div>
+                    <div class="fea">
+                        <i class="fas fa-lock fa-3x mb-3 pt-2"></i>
+                        <h3>Secure Payment System</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos impedit id
+                            accusamus quas maxime
+                            expedita nostrum atque delectus deleniti ad modi repellat debitis ipsam
+                            quisquam amet, odit voluptate
+                            recusandae distinctio? Perferendis tenetur quibusdam porro dolor dignissimos
+                            id magnam debitis vitae?</p>
+                    </div>
+                    <div class="fea">
+                        <i class="fas fa-headphones fa-3x mb-3 pt-2"></i>
+                         <h3>24/7 Support</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos impedit id
+                            accusamus quas maxime
+                            expedita nostrum atque delectus deleniti ad modi repellat debitis ipsam
+                            quisquam amet, odit voluptate
+                            recusandae distinctio? Perferendis tenetur quibusdam porro dolor dignissimos
+                            id magnam debitis vitae?</p>
+                    </div>
+                    </div>
+            </section>
+          <!--feature code ends here-->
+          <!--footer section starts here-->
+          <footer class="section-p1">
+              <div class="col">
+                <a href="index.html"><img src="images/logo.png" alt="" height="50" width="100"></a>
+                <p>Lorem ipsum dolor, sit amet</p>
+                <p>consectetur adipisicing elit. </p>
+                <p>Impedit, totam estillum ipsum quas ad</p>
+                <p>dignissimos magni veritatis natus voluptatem.
+                    </p>
+              </div>
+              <div class="col">
+                <h3>Quick Links</h3>
+                <a href="about.html">About</a>
+                 <a href="javascript:;">Offers & Discounts</a>
+                 <a href="javascript:;">Get Coupon</a>
+                 <a href="contact.html">Contact Us</a>
+              </div>
+              <div class="col">
+                <h3>New Products</h3>
+                <a href="javascript:;">Woman Cloth</a>
+                <a href="javascript:;">Fashion Accessories</a>
+                <a href="javascript:;">Man Accessories</a>
+                <a href="javascript:;">Rubber made Toys</a>
+            </div>
+            <div class="col">
+                <h3>Support</h3>
+                <a href="javascript:;">Frequently Asked Questions</a>
+                <a href="javascript:;">Terms & Conditions</a>
+                <a href="javascript:;">Privacy Policy</a>
+                <a href="javascript:;">Report a Payment Issue</a>
+            </div>
+           <div class="copyright">
+               <p>Copyright ©2022 All rights reserved</p>
+           </div>
+           <div class="backtop">
+            <a id="button" href="#top" class="btn btn-lg btn-outline-danger" role="button">
+            <i class="fas fa-chevron-up text-dark"></i>
+            </a>
+            </div>
+          </footer>
+           <!--footer section ends here-->
+        <script src="script.js"></script>
+    </body>
+</html>
